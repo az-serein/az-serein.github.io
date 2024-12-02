@@ -24,7 +24,7 @@ main:
     url: /projects/
     
   - title: "CV"
-    url: /files/Austin.Zhang_CV.pdf/
+    url: https://github.com/az-serein/az-serein.github.io/blob/master/files/Austin.Zhang_CV.pdf
     
   # - title: "Guide"
   #   url: /markdown/
