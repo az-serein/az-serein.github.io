@@ -5,8 +5,8 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  # - title: "Publications"
+  #   url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
@@ -20,11 +20,11 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
-  - title: "Projects"
-    url: /projects/
+  # - title: "Projects"
+  #   url: /projects/
     
-  - title: "CV"
-    url: https://github.com/az-serein/az-serein.github.io/blob/master/files/Austin.Zhang_CV.pdf
+  # - title: "CV"
+  #   url: https://github.com/az-serein/az-serein.github.io/blob/master/files/Austin.Zhang_CV.pdf
     
   # - title: "Guide"
   #   url: /markdown/
