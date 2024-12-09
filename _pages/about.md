@@ -48,10 +48,13 @@ My research interests lie primarly in city- and building-scale disaster predicti
 
 ## Project
 **Bytedance - Data Optimization and Algorithm Enhancement | Remote Collaboration**
+* Test
 
 **Exploratory Data Analysis in NYC Open Data—Rodent Inspection | Statstics Course (Introduction to Data Science)**
+* Test
 
 **Prediction of NBA Players’ Salary based on On-Court Contributions | Statstics Course (Introduction to Statistical Learning)**
+* Test
 
 ## Miscellaneous
 Activities I find enjoyable: baskerball, reading, writing, and more.
