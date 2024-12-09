@@ -7,24 +7,51 @@ redirect_from:
   - /about.html
 ---
 
+<style type="text/css">
+   /*! div style */
+  .image-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    justify-content: center;
+    padding: 4px;
+  }
 
+  .box {
+      flex-basis: 25%;
+      width: 100%;
+      padding: 10px;
+      margin: 2px;
+  }
+
+  .img-gallery {
+	width: 100%;
+  height: 200px;
+	object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  }
+  .img-gallery:hover {
+    transform: scale(1.05);
+  }
+</style>
 
 ## Biography
 I am a undergraduate researcher at University of Connecticut.
 My research interests lie primarly in city- and building-scale disaster prediction. I an anticipated to received my B.A. from the Statistics Department and Economics Department. [University of Connecticut](https://uconn.edu/).
 
 ## Experience
-**01/2024 - 05/2024 | Intern | Qian Shi Du
+**01/2024 - 05/2024 | Intern | Qian Shi Du**
 
-**05/2024 - 08/2024 | Intern | GBCS-SkyIT
+**05/2024 - 08/2024 | Intern | GBCS-SkyIT**
 * Developed backend services for the Voop application using Express.js and Django REST, contributing to scalable architecture and API integration.
 
 ## Project
-**Bytedance - Data Optimization and Algorithm Enhancement | Remote Collaboration
+**Bytedance - Data Optimization and Algorithm Enhancement | Remote Collaboration**
 
-**Exploratory Data Analysis in NYC Open Data—Rodent Inspection | Statstics Course (Introduction to Data Science)
+**Exploratory Data Analysis in NYC Open Data—Rodent Inspection | Statstics Course (Introduction to Data Science)**
 
-**Prediction of NBA Players’ Salary based on On-Court Contributions | Statstics Course (Introduction to Statistical Learning)
+**Prediction of NBA Players’ Salary based on On-Court Contributions | Statstics Course (Introduction to Statistical Learning)**
 
 ## Miscellaneous
 Activities I find enjoyable: baskerball, reading, writing, and more.
