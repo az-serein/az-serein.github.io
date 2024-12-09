@@ -37,7 +37,7 @@ redirect_from:
 </style>
 
 ## Biography
-I am a Undergraduate Researcher at University of Connecticut.
+I am a undergraduate researcher at University of Connecticut.
 My research interests lie primarly in city- and building-scale disaster prediction. I an anticipated to received my B.A. from the Statistics Department and Economics Department. [University of Connecticut](https://uconn.edu/).
 
 ## Experience
@@ -48,7 +48,9 @@ My research interests lie primarly in city- and building-scale disaster predicti
 
 ## Project
 ** Bytedance - Data Optimization and Algorithm Enhancement | Remote Collaboration
+
 ** Exploratory Data Analysis in NYC Open Data—Rodent Inspection | Statstics Course (Introduction to Data Science)
+
 ** Prediction of NBA Players’ Salary based on On-Court Contributions | Statstics Course (Introduction to Statistical Learning)
 
 ## Miscellaneous
