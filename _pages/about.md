@@ -80,8 +80,8 @@ Activities I find enjoyable: baskerball, reading, writing, and more.
 <div class ="image-gallery">
 {% for name in filenames %}
     <div class="box">
-    <a href="{{ site.url }}{{ site.baseurl }}/assets/img/cat/full/{{ name }}">
-      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/molly/thumbs/{{ name }}" alt="{{ name }}"  class="img-gallery" />
+    <a href="{{ site.url }}{{ site.baseurl }}/images/{{ name }}">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/{{ name }}" alt="{{ name }}"  class="img-gallery" />
      </a>
     </div>
  {% endfor %}
