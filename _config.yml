@@ -21,7 +21,7 @@ repository               : "az-serein/az-serein.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profiles.png"
+  avatar           : "images/profile.png"
   name             : "Xingye Zhang"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate Researcher in Statistical Data Science"
