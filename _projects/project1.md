@@ -13,6 +13,9 @@ Headings are cool
 ======
 
 [Visualization Website](https://github.com/az-serein/az-serein.github.io/raw/master/_pages/New_Haven_Interactive_Map_1Percent_Sample.html)
+
+<a href="https://az-serein.github.io/_pages/New_Haven_Interactive_Map_1Percent_Sample.html" target="_blank">View the New Haven Interactive Map</a>
+
 ======
 
 Aren't headings cool?
