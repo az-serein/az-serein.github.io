@@ -20,8 +20,8 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
-  # - title: "Projects"
-  #   url: /projects/
+  - title: "Projects"
+    url: /projects/
     
   # - title: "CV"
   #   url: https://github.com/az-serein/az-serein.github.io/blob/master/files/Austin.Zhang_CV.pdf
