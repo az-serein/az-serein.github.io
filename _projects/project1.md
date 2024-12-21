@@ -9,4 +9,4 @@ tags:
 ---
 
 ======
-<a href="https://az-serein.github.io/_pages/New_Haven_Interactive_Map_1Percent_Sample.html" target="_blank">View the New Haven Interactive Map</a>
+<a href="https://az-serein.github.io/_pages/New_Haven_Interactive_Map_Sample.html" target="_blank">View the New Haven Interactive Map</a>
