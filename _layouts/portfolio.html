@@ -50,7 +50,7 @@
           <a href="{{ '/work/' | relative_url }}"{% if page.nav == 'work' %} aria-current="page"{% endif %}>Work</a>
           <a href="{{ '/about/' | relative_url }}"{% if page.nav == 'about' %} aria-current="page"{% endif %}>About</a>
           <a href="{{ '/resume/' | relative_url }}"{% if page.nav == 'resume' %} aria-current="page"{% endif %}>Résumé</a>
-          <a class="nav-contact" href="mailto:azserein1016@outlook.com">Contact</a>
+          <a class="nav-contact" href="mailto:azserein1016@outlook.com" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" aria-expanded="false">Contact</a>
         </nav>
       </div>
     </header>
@@ -76,5 +76,111 @@
         <span>Designed for clarity, evidence, and useful work.</span>
       </div>
     </footer>
+
+    <dialog class="contact-dialog" id="contact-dialog" data-contact-dialog aria-labelledby="contact-dialog-title" aria-describedby="contact-dialog-description">
+      <div class="contact-dialog__surface">
+        <button class="contact-dialog__close" type="button" data-contact-close aria-label="Close contact window">×</button>
+
+        <div class="contact-dialog__intro">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-dialog-title" tabindex="-1">Start a conversation.</h2>
+          <p id="contact-dialog-description">Questions, opportunities, and thoughtful collaborations are always welcome.</p>
+
+          <div class="contact-channels">
+            <a class="contact-channel" href="mailto:azserein1016@outlook.com">
+              <span>Email</span>
+              <strong>azserein1016@outlook.com</strong>
+            </a>
+            <a class="contact-channel" href="https://www.linkedin.com/in/az-serein" target="_blank" rel="noopener noreferrer">
+              <span>LinkedIn</span>
+              <strong>linkedin.com/in/az-serein <span aria-hidden="true">↗</span></strong>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" data-contact-form>
+          <div class="contact-form__row">
+            <label class="contact-field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" maxlength="100" required>
+            </label>
+            <label class="contact-field">
+              <span>Your email</span>
+              <input type="email" name="email" autocomplete="email" maxlength="254" required>
+            </label>
+          </div>
+
+          <label class="contact-field">
+            <span>Message</span>
+            <textarea name="message" rows="7" maxlength="1500" required></textarea>
+          </label>
+
+          <button class="button contact-form__submit" type="submit">Open email to send <span aria-hidden="true">↗</span></button>
+          <p class="contact-form__note">This opens your email app; press Send there to deliver the message. Nothing is stored by this website.</p>
+        </form>
+      </div>
+    </dialog>
+
+    <script>
+      (() => {
+        const dialog = document.querySelector('[data-contact-dialog]');
+        const openers = document.querySelectorAll('[data-contact-open]');
+        const closeButton = dialog?.querySelector('[data-contact-close]');
+        const form = dialog?.querySelector('[data-contact-form]');
+        const title = dialog?.querySelector('#contact-dialog-title');
+
+        if (!dialog || !closeButton || !form || !title || typeof dialog.showModal !== 'function') return;
+
+        let lastOpener = null;
+
+        const closeDialog = () => {
+          if (dialog.open) dialog.close();
+        };
+
+        openers.forEach((opener) => {
+          opener.addEventListener('click', (event) => {
+            event.preventDefault();
+            lastOpener = opener;
+            dialog.showModal();
+            document.documentElement.classList.add('contact-is-open');
+            openers.forEach((item) => item.setAttribute('aria-expanded', 'true'));
+            window.requestAnimationFrame(() => title.focus());
+          });
+        });
+
+        closeButton.addEventListener('click', closeDialog);
+
+        dialog.addEventListener('click', (event) => {
+          if (event.target !== dialog) return;
+          const bounds = dialog.getBoundingClientRect();
+          const inside =
+            event.clientX >= bounds.left &&
+            event.clientX <= bounds.right &&
+            event.clientY >= bounds.top &&
+            event.clientY <= bounds.bottom;
+          if (!inside) closeDialog();
+        });
+
+        dialog.addEventListener('close', () => {
+          document.documentElement.classList.remove('contact-is-open');
+          openers.forEach((item) => item.setAttribute('aria-expanded', 'false'));
+          lastOpener?.focus();
+        });
+
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+          if (!form.reportValidity()) return;
+
+          const data = new FormData(form);
+          const name = String(data.get('name') || '').trim();
+          const email = String(data.get('email') || '').trim();
+          const message = String(data.get('message') || '').trim();
+          const subject = `Portfolio message from ${name}`;
+          const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+          window.location.href = `mailto:azserein1016@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+      })();
+    </script>
   </body>
 </html>

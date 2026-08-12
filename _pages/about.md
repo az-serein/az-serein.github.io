@@ -23,8 +23,8 @@ body_class: home
       </div>
     </div>
     <figure class="hero-portrait">
-      <img src="{{ '/assets/images/xingye-hero.jpg' | relative_url }}" alt="Xingye Zhang outdoors with Molly" width="1361" height="1080">
-      <figcaption class="portrait-label">Based in Philadelphia · building at the intersection of AI, evaluation, and data engineering.</figcaption>
+      <img src="{{ '/assets/images/xingye-hero.jpg' | relative_url }}" alt="Xingye Zhang standing outdoors beside Molly" width="1600" height="1269">
+      <figcaption class="portrait-label">Xingye &amp; Molly · Philadelphia</figcaption>
     </figure>
   </div>
 </section>

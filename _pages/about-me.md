@@ -18,8 +18,8 @@ body_class: about-page
 <section class="section compact">
   <div class="shell about-grid">
     <aside class="about-aside">
-      <img src="{{ '/assets/images/xingye-hero.jpg' | relative_url }}" alt="Xingye Zhang with Molly" width="1361" height="1080">
-      <p>Philadelphia, Pennsylvania · Systems Engineering at Penn</p>
+      <img src="{{ '/assets/images/xingye-hero.jpg' | relative_url }}" alt="Xingye Zhang standing outdoors beside Molly" width="1600" height="1269">
+      <p>Xingye &amp; Molly · Philadelphia, Pennsylvania</p>
     </aside>
     <div class="prose">
       <h2>From statistics to agent systems</h2>
